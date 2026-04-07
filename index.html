@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aplikasi Pengingat Jadwal</title>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fecfef);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #fff0f5;
+            padding: 25px;
+            border-radius: 20px;
+            width: 350px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h2 {
+            color: #ff4d88;
+            margin-bottom: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 10px;
+            border: 1px solid #ffb6c1;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #ff4d88;
+        }
+
+        button {
+            border: none;
+            border-radius: 10px;
+            padding: 8px 12px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn-tambah {
+            width: 100%;
+            background: #ff4d88;
+            color: white;
+            margin-top: 10px;
+        }
+
+        .btn-tambah:hover {
+            background: #e6005c;
+        }
+
+        li {
+            background: #ffe6f0;
+            padding: 10px;
+            border-radius: 12px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .teks {
+            color: #333;
+            font-size: 14px;
+        }
+
+        .btn-edit {
+            background: #ff99cc;
+            color: black;
+            margin-left: 5px;
+        }
+
+        .btn-edit:hover {
+            background: #ff66a3;
+        }
+
+        .btn-hapus {
+            background: black;
+            color: white;
+            margin-left: 5px;
+        }
+
+        .btn-hapus:hover {
+            background: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>📅 Pengingat Jadwal</h2>
+
+        <input type="text" id="kegiatan" placeholder="Nama kegiatan">
+        <input type="datetime-local" id="waktu">
+        <button class="btn-tambah" onclick="tambahJadwal()">Tambah</button>
+
+        <ul id="list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
